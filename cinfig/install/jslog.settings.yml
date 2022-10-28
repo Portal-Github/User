@@ -1,0 +1,6 @@
+excluded_messages: |
+  Failed to fetch
+  Load failed
+  The operation was aborted.
+excluded_user_agents_regex: '/alexa|bot|crawl(er|ing)|facebookexternalhit|feedburner|google web preview|wikipedia|meta|wikimedia|slurp|spider|yahoo!|yandex/'
+maximum_messages_per_page: 100

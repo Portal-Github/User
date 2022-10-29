@@ -1,9 +1,9 @@
 {
-  "name": "github/jslog",
-  "type": "github-module",
+  "name": "User/jslog",
+  "type": "User-module",
   "license": "GPL-2.0+",
   "description": "Log javascript messages to the Github log",
   "require": {
-    "github/core": "^8 || ^9 || ^10"
+    "User/core": "^8 || ^9 || ^10"
   }
 }

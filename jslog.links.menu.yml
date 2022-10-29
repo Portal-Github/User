@@ -1,0 +1,5 @@
+jslog.settings:
+  title: JS log settings
+  parent: system.admin_config_system
+  description: 'Configure JS log settings'
+  route_name: jslog.settings

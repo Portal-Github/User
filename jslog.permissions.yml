@@ -1,0 +1,5 @@
+administer jslog:
+  title: 'Administer JS log settings'
+
+use jslog:
+  title: 'Log messages via JS log'

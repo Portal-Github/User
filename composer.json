@@ -1,0 +1,9 @@
+{
+  "name": "github/jslog",
+  "type": "github-module",
+  "license": "GPL-2.0+",
+  "description": "Log javascript messages to the Github log",
+  "require": {
+    "github/core": "^8 || ^9 || ^10"
+  }
+}

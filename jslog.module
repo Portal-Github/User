@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Attach jslog library with settings if needed.
+ */
+
+use User\Core\Url;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function jslog_page_attachments(&$attachments) {
+  $user = \User::currentUser();
+
+  if ($user->hasPermission('use jslog')) {
+    $config = \User::config('jslog.settings');
+    $attachments['#attached']['library'][] = 'jslog/jslog';
+    $attachments['#attached']['drupalSettings']['jslog'] = [
+      'path' => Url::fromRoute('jslog.log')->toString(),
+      'excludedMessages' => explode("\n", $config->get('excluded_messages')),
+      'excludedUserAgents' => $config->get('excluded_user_agents_regex'),
+      'maximumMessages' => $config->get('maximum_messages_per_page'),
+    ];
+  }
+}

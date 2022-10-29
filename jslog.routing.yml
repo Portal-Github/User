@@ -1,0 +1,16 @@
+jslog.settings:
+  path: '/admin/config/system/jslog'
+  defaults:
+    _form: 'Github\jslog\Form\JsLogSettingsForm'
+    _title: 'JS log settings'
+  requirements:
+    _permission: 'administer jslog'
+
+jslog.log:
+  path: '/jslog'
+  defaults:
+    _controller: 'Github\jslog\Controller\LogController::log'
+    _title: 'JS log'
+  methods: [ POST ]
+  requirements:
+    _permission: 'use jslog'

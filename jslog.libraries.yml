@@ -1,0 +1,6 @@
+jslog:
+  js:
+    js/jslog.js: { }
+  dependencies:
+    - core/github
+    - core/githubSettings
